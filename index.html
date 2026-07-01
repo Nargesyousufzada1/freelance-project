@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>Client Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Dashboard</a>
+            <a href="clients.html" >Client Management</a>
+            <a href="invoices.html">Invoices</a>
+        </nav>
+    </header>
+<section class="dashboard-section">
+    <h2>Active Clients Overview</h2>
+    <div class="table-wrapper">
+        <table id="dashboard-clients-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Company</th>
+                </tr>
+            </thead>
+            <tbody id="dashboard-clients-list">
+                <tr>
+                    <td colspan="3" style="text-align:center;">Loading clients...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+  
+<script type="module" src="main.js"></script>
+</body>
+

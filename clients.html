@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>Client Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Dashboard</a>
+            <a href="clients.html">Client Management</a>
+            <a href="invoices.html">Invoices</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Section of Clients Management</h1>
+        <section class="form-section">
+            <h2>Adding New Client</h2>
+            <form id="client-form">
+                <input type="hidden" id="client-id">
+                <div class="form-group">
+                    <label for="client-name">Client Name *:</label>
+                    <input type="text" id="client-name" required placeholder="Enter complete name">
+                </div>
+                <div class="form-group">
+                    <label for="client-email">Email *:</label>
+                    <input type="email" id="client-email" required placeholder="Enter email address">
+                </div>
+                <div class="form-group">
+                    <label for="client-company">Company Name:</label>
+                    <input type="text" id="client-company" placeholder="Freelance Co.">
+                </div>
+                <div class="form-group">
+                    <label for="client-notes">Note:</label>
+                    <textarea id="client-notes" rows="3" placeholder="Description"></textarea>
+                </div>
+                <button type="submit" id="submit-btn">Save The Client</button>
+                <button type="button" id="cancel-btn" class="hidden">Discard the changes</button>
+            </form>
+             </section>
+             <section class="table-section">
+            <h2>Clients list</h2>
+            <div class="table-wrapper">
+                <table id="clients-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Company</th>
+                            <th>Notes</th>
+                            <th>Operation</th>
+                        </tr>
+                    </thead>
+                    <tbody id="clients-list">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="clients.js"></script>
+</body>
+</html>
